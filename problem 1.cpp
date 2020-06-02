@@ -7,7 +7,7 @@ using namespace std;
 
 vector<int> func(int arr[],int tar,int sz){
         vector<int> v;
-        int dp[tar+1]={0};
+        map<long long,long long> dp;
         for(int i=0;i<sz;i++){
             dp[arr[i]]=i+1;
         }
