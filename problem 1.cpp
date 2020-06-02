@@ -9,6 +9,11 @@ vector<int> func(int arr[],int tar,int sz){
         vector<int> v;
         map<long long,long long> dp;
         for(int i=0;i<sz;i++){
+            if(dp[tar-arr[i]]!=0){
+              v.push_back(i);
+                v.push_back(dp[tar-arr[i]]-1);
+              return v;
+             }
             dp[arr[i]]=i+1;
         }
         for(int i=1;i<=sz;i++){
