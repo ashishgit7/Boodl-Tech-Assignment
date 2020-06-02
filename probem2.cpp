@@ -34,7 +34,7 @@ int main()
 //    if there is no leading zero
     cout<<func(num);
 
-    ///if there is leading zero////
+    ///if there is leading zero as it is not mentioned in assignment that given integer can't have leading zero////
     /*
     string s; cin>>s;
     int n = s.length();
